@@ -8,18 +8,60 @@
 </head>
 
 <body>
-    <h1 id="first-tag">Learn js</h1>
+    <h1 id="first-tag"></h1>
     <p class="p-tag">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus nulla repudiandae minima eaque
         voluptas
         repellat nobis recusandae corporis iusto explicabo doloremque animi quaerat quod facilis dolore dolor, ipsam eos
         veritatis?</p>
-    <button onclick="handleTextChange()">Change text</button>
+    <button onclick="handleIncrement()">Handle increment</button>
+    <button onclick="handleDecrement()">Handle decrement</button>
 </body>
 <script>
+    var count = 0;
+
+    function handleIncrement() {
+
+        if (count < 10 || count == 10) {
+            count++;
+            console.log(count, "count")
+        }
+    }
+
+    function handleDecrement() {
+
+        if (count > 0) {
+            count--;
+            console.log(count, "count")
+        }
+    }
+
+
+    // var numberValue = 11
+    // var isTrue = true
+    // var firstName = "radial";
+    // var secondName = "Code";
+
+
+    // console.log(typeof numberValue)
+    // console.log(typeof isTrue)
+    // var firstArray = [1, 2];
+    // var secondArr = [3, 4];
+    // const fullName = firstArray.concat(secondArr);
+
+    // console.log(fullName);
+    // document.getElementById("first-tag").innerHTML = fullName;
+
+    // function documetWrite() {
+
+    //     const a = 20;
+    //     const b = 3;
+
+    //     const z = a * b;
+    //     document.write(z)
+    // }
     // JAVASCRIPT
 
     // GLOBAL VARIABLE 
-
 
     // const array = [{
     //         id: 1,
@@ -33,10 +75,7 @@
 
     // console.log(array[1]);
 
-
-
     //  ES5
-
 
     // function thisisNormalFunction(params, second) {
     //     console.log(params)
@@ -50,13 +89,11 @@
 
     // }
 
-
     // const one = 0;
     // console.log(one);
 
     // one = 1
     // console.log(one);
-
 
     // function somethingDo() {
     //     var firstEs5 = 5;
@@ -66,9 +103,7 @@
     //     console.log("firstEs5", firstEs5);
     //     console.log("secondEs6", secondEs6);
     // }
-
     // somethingDo();
-
 
     // var first = document.getElementById("first-tag");
     // var selectParaTagByClass = document.getElementsByClassName("p-tag")
